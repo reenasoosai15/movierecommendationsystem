@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Personalized Movie Recommendations</h1>
+        <!-- Filters Section -->
+        <div class="filters">
+            <select id="genreFilter">
+                <option value="">All Genres</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
+            </select>
+
+            <select id="ratingFilter">
+                <option value="">All Ratings</option>
+                <option value="4">4 and above</option>
+                <option value="3">3 and above</option>
+                <option value="2">2 and above</option>
+            </select>
+
+            <button id="applyFilters">Apply Filters</button>
+        </div>
+
+        <!-- Movie List Section -->
+        <div id="movieList"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
